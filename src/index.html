@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Login Contract</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand navbar-dark">
+          <a class="navbar-brand" href="#">10 weeks project</a>
+
+          <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#usage">How to use</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#login">Login</a>
+              </li>
+            </ul>
+          </div>
+    </nav>
+
+
+  <div class="container-fluid">
+    <div id="top-page">
+      <div class="title-text">
+          <h2>Login Contract</h2>
+          <p>Login with blockchain</p>
+      </div>
+    </div>
+
+    <div id="login" class="mt-3">
+        <h4 id="logined">Not logined</h4>
+                <button type="button" class="btn btn-danger" id="logout" onclick="App.logout();">Logout</button>
+        <div class="wrapper mt-3">
+            <h2>Login</h2>
+                    Password: <input type="password" id="password"><br>
+                    <button type="button" class="btn btn-primary loginBtn mt-2" id="loginBtn" onclick="App.loginFunc();">Login</button><br>
+                    <button type="button" class="btn btn-info loginBtn mt-2 mb-2" onclick="App.forgotPassword();" id="forgotBtn">Forgot password</button><br>
+        </div>
+
+        <div class="wrapper mt-3">
+            <h3>Sign Up</h3>
+                    Password: <input type="password" id="pass"><br>
+                    Friend1: <input type="text" id="fr1"><br>
+                    Friend2: <input type="text" id="fr2"><br>
+                    Friend3: <input type="text" id="fr3"><br>
+                    <button type="button" class="btn btn-primary mt-2 mb-2 loginBtn" id="signin" onclick="App.signin();">Sign in</button><br>
+        </div>
+
+    <div class="wrapper mt-3">
+        <h3>Get Reset Number</h3>
+        Address: <input type="text" id="resetId"><br>
+        <button type="button" class="btn btn-info loginBtn mt-2 mb-2" id="resetNum" onclick="App.getResetNumber();">Get number</button>
+    </div>
+
+    <div class="wrapper mt-3">
+        <h3>Reset Password</h3>
+        Reset Number1: <input type="text" id="reset1"><br>
+        Reset Number2: <input type="text" id="reset2"><br>
+        Reset Number3: <input type="text" id="reset3"><br>
+        New Password: <input type="password" id="newPassword"><br>
+        <button type="button" class="btn btn-info loginBtn mt-2 mb-2" id="resetPass" onclick="App.resetPassword();">Reset Password</button>
+    </div>
+
+
+
+
+
+    </div>
+
+
+    <div id="usage">
+        <div class="usageList">
+            <h3>1. Sign Up</h3>
+            <p>Fill up the forms. Your password and your friends' ethereum address.</p>
+            <h3>2. Login</h3>
+            <p>Put your correct password. When you login correctly, the logout button will show up. Your login is valid in 1 hour. After 1 hour, you have to login again.</p>
+            <h3>3. Logout</h3>
+            <p>Click the logout button, and then you will logout</p>
+            <h3>4. Forgot password</h3>
+            <p>When you forgot your password, click the &quot;Forgot password&quot; button, and then 3 reset numbers will be generated, which only your friends can see. So ask them to give you the reset numbers.</p>
+            <h3>5. Get Reset Number</h3>
+            <p>When you are asked to get reset number, you can put their address and you can get their reset number. Let them know the number.</p>
+            <h3>6. Reset Password</h3>
+            <p>Input reset numbers you asked to your friends. If 2 of 3 are correct, you can change password. Do not put 0 into the form.</p>
+            <h3>Use ropsten network</h3>
+        </div>
+    </div>
+
+
+
+
+  </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

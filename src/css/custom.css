@@ -1,0 +1,104 @@
+/* general */
+.row{
+  margin: 20px auto;
+}
+
+
+/* header navigation style */
+
+/* navbar background color */
+.navbar {
+  background-color: rgb(40, 40, 40);
+  border-color: rgb(40, 40, 40);
+}
+/* navbar text color */
+.navbar-nav > li > a {
+  color: #ffffff!important;
+}
+
+.navbar-nav > li > a :visited{
+  color: #ffffff;
+}
+/* navbar text color when hover,focus */
+.navbar-nav > li > a:hover {
+  color: rgb(140, 140, 140)!important;
+  background-color: transparent;
+}
+
+/* navbar brand name */
+.navbar-brand a{
+  color: #ffffff !important;
+}
+
+/* navbar brand name when hover */
+.navbar-brand a:hover{
+  color: rgb(140, 140, 140) !important;
+}
+
+
+
+/* top page */
+.container-fluid{
+  margin: 0px;
+  padding: 0px;
+}
+
+#top-page{
+    margin: 0px;
+    padding: 0px;
+    height: 800px;
+    width: 100%;
+    background: black url("../images/background.jpg") no-repeat fixed center;
+}
+.title-text{
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    padding-top: 300px;
+    color: white;
+}
+.title-text h2{
+    font-size: 4em;
+}
+.title-text p{
+    font-size: 1.5em;
+}
+
+/* login */
+#login{
+    text-align: center;
+}
+
+#logined{
+    color: red;
+    font-weight: bold;
+    display: inline;
+}
+
+.wrapper{
+    width: 600px;
+    border: 1px black solid;
+    margin: auto;
+}
+
+.loginBtn{
+    width: 150px;
+}
+
+
+
+
+
+
+/* usage */
+#usage{
+    width: 100%;
+    background: rgb(220, 220, 220);
+    margin-top: 35px;
+}
+.usageList{
+    width: 700px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
